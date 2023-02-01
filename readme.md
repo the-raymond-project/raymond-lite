@@ -1,4 +1,4 @@
-This is the initial version of the Raymond Project. \
+This is the initial version of the Raymond Project. 
 
 Current packages used: \
 conda   22.9.0 \
