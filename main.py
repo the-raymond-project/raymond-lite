@@ -1,13 +1,15 @@
 from flask import Flask, request
 import openai
+import os
+
+app = Flask(__name__)
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route("/")
-def index():
-    return "Welcome to the Meditation Instruction Website!"
-
-@app.route("/meditation_instructions", methods=["GET", "POST"])
+@app.route("/", methods=["GET", "POST"])
 def meditation_instructions():
     if request.method == "POST":
         prompt = request.form["prompt"]
@@ -20,7 +22,8 @@ def meditation_instructions():
             temperature=0.5,
         ).get("choices")[0].text
         return response
-    return "Please provide a prompt to generate meditation instructions."
+    result = request.args.get("result")
+    return render_template("index.html", result=result)
 
 if __name__ == "__main__":
     app.run()
