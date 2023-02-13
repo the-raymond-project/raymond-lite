@@ -10,7 +10,8 @@ openai  0.26.4
 1) Install conda
 2) Activate conda
 3) Type in terminal `conda create --name raymond-lite-env python=3.10.9 flask=2.2.2`
-4) Type `conda active raymond-lite-env`
+4) Type `conda activate raymond-lite-env`
+5) Type `pip install openai==0.26.4`
 
 requirements (stated on OpenAI documentation):
 autopep8==1.6.0
