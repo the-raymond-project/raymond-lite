@@ -5,13 +5,15 @@ Current packages used: \
 conda   22.9.0 \
 python  3.10.9 \
 flask   2.2.2 \
-openai  0.26.4  
+openai  0.26.4 
 
+For the backend:
 1) Install conda
 2) Activate conda
 3) Type in terminal `conda create --name raymond-lite-env python=3.10.9 flask=2.2.2`
 4) Type `conda activate raymond-lite-env`
-5) Type `pip install openai==0.26.4`
+5) Type `pip install openai==0.27.2 flask-cors==3.0.10 dotenv_values==1.0.0`
+
 
 requirements (stated on OpenAI documentation):
 autopep8==1.6.0
