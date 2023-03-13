@@ -1,0 +1,18 @@
+{
+  "name": "clinet",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "@esbuild/darwin-arm64": "^0.17.11",
+    "typeit": "^8.7.1"
+  }
+}
