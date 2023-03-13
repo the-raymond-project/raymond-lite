@@ -15,6 +15,7 @@ Also, some node components were used:
 
 - nodejs: 18.15.0
 - create-react-app: 5.0.1
+- TypeIt
 
 1) Install conda
 2) Install nodejs
